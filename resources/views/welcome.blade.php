@@ -55,7 +55,7 @@
                     <iframe
                         width="100%"
                         height="400"
-                        src="https://www.youtube.com/embed/VIDEO_ID"
+                        src="https://www.youtube.com/embed/f3c4mQty_so"
                         title="Demo Robot"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -94,19 +94,19 @@
         <div class="row text-center">
             <div class="col-md-4 mb-4">
                 <div class="stat-card p-4 bg-light rounded">
-                    <div class="stat-number text-primary fw-bold" style="font-size: 2.5rem;">45+</div>
+                    <div class="stat-number text-primary fw-bold" style="font-size: 2.5rem;">20+</div>
                     <p class="stat-label">Anggota Aktif</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="stat-card p-4 bg-light rounded">
-                    <div class="stat-number text-success fw-bold" style="font-size: 2.5rem;">28</div>
+                    <div class="stat-number text-success fw-bold" style="font-size: 2.5rem;">10+</div>
                     <p class="stat-label">Kompetisi Diikuti</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="stat-card p-4 bg-light rounded">
-                    <div class="stat-number text-warning fw-bold" style="font-size: 2.5rem;">15</div>
+                    <div class="stat-number text-warning fw-bold" style="font-size: 2.5rem;">10+</div>
                     <p class="stat-label">Penghargaan Diraih</p>
                 </div>
             </div>
@@ -114,7 +114,7 @@
 
         <div class="row mt-5 text-center">
             <div class="col-12">
-                <p class="text-muted">Berdiri sejak <strong>2015</strong> dengan dedikasi penuh untuk kemajuan robotika nasional</p>
+                <p class="text-muted">Berdiri sejak <strong>2018</strong> dengan dedikasi penuh untuk kemajuan robotika nasional</p>
             </div>
         </div>
     </div>
@@ -131,7 +131,7 @@
             <!-- Project 1 -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 hover-card">
-                    <img src="https://via.placeholder.com/400x250/6C63FF/FFFFFF?text=Robot+Humanoid" class="card-img-top" alt="Robot Humanoid">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17oulaDxIokVYwIYhQKWLBfrX27vC9FuNFQ&s" class="card-img-top" alt="Robot Humanoid">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Robot Humanoid H-01</h5>
                         <p class="card-text text-muted">
@@ -141,7 +141,7 @@
                             <span class="badge bg-primary">Hardware</span>
                             <span class="badge bg-info">AI</span>
                         </div>
-                        <a href="#" class="btn btn-sm btn-primary">
+                        <a href="{{ route('proyek.show', 'robot-humanoid-h-01') }}" class="btn btn-sm btn-primary">
                             <i class="fas fa-arrow-right"></i> Detail
                         </a>
                         <a href="#" class="btn btn-sm btn-outline-secondary ms-2">
@@ -154,7 +154,7 @@
             <!-- Project 2 -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 hover-card">
-                    <img src="https://via.placeholder.com/400x250/FF6B6B/FFFFFF?text=Autonomous+Drone" class="card-img-top" alt="Autonomous Drone">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImi1uv090RHRFYiMpVrtiTulKF0PuO2rGHg&s" class="card-img-top" alt="Autonomous Drone">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Autonomous Drone UAV-X</h5>
                         <p class="card-text text-muted">
@@ -164,7 +164,7 @@
                             <span class="badge bg-danger">Drone</span>
                             <span class="badge bg-warning">IoT</span>
                         </div>
-                        <a href="#" class="btn btn-sm btn-primary">
+                        <a href="{{ route('proyek.show', 'autonomous-drone-uav-x') }}" class="btn btn-sm btn-primary">
                             <i class="fas fa-arrow-right"></i> Detail
                         </a>
                         <a href="#" class="btn btn-sm btn-outline-secondary ms-2">
@@ -177,7 +177,7 @@
             <!-- Project 3 -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 hover-card">
-                    <img src="https://via.placeholder.com/400x250/4ECDC4/FFFFFF?text=Mobile+Robot" class="card-img-top" alt="Mobile Robot">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/055/098/161/small/autonomous-mobile-robot-moving-on-industrial-floor-with-red-lights-photo.jpg" class="card-img-top" alt="Mobile Robot">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Mobile Robot ABU Robocon</h5>
                         <p class="card-text text-muted">
@@ -187,7 +187,7 @@
                             <span class="badge bg-success">Mekanik</span>
                             <span class="badge bg-info">Control</span>
                         </div>
-                        <a href="#" class="btn btn-sm btn-primary">
+                        <a href="{{ route('proyek.show', 'mobile-robot-abu-robocon') }}" class="btn btn-sm btn-primary">
                             <i class="fas fa-arrow-right"></i> Detail
                         </a>
                         <a href="#" class="btn btn-sm btn-outline-secondary ms-2">

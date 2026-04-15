@@ -2,6 +2,7 @@
 
 use App\Models\Project;
 use App\Http\Controllers\RecruitmentController;
+use App\Http\Controllers\ProyekController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -22,3 +23,6 @@ Route::get('/', function () {
 
 // Recruitment form submission
 Route::post('/recruit/submit', [RecruitmentController::class, 'submit'])->name('recruit.submit');
+
+// Project Detail Pages
+Route::get('/proyek/{slug}', [ProyekController::class, 'show'])->name('proyek.show');

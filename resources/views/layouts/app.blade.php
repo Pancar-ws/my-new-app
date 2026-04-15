@@ -18,8 +18,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/">
-                <i class="fas fa-robot"></i> Blakasutha Team
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="/">
+                <img src="{{ asset('logo satu.png') }}" alt="Blakasutha Logo" height="40" class="me-2 navbar-logo" style="height: 40px; width: auto;"> Blakasutha Team
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -46,26 +46,26 @@
                     <p>Gedung Teknik Lantai 2<br>Laboratorium Robotika</p>
                 </div>
                 <div class="col-md-4">
-                    <h5><i class="fas fa-clock"></i> Jam Latihan</h5>
-                    <p>Selasa: 16:00 - 18:00<br>Kamis: 16:00 - 18:00</p>
+                    <h5><i class="fas fa-clock"></i> Waktu Riset</h5>
+                    <p>Weekday: 17:00 - 23:00<br>Weekend: 10:00 - 16:00</p>
                 </div>
                 <div class="col-md-4">
                     <h5><i class="fas fa-envelope"></i> Hubungi Kami</h5>
                     <p>Email: robotika@kampus.ac.id<br>
-                    <a href="#" class="text-decoration-none text-warning">
+                    <a href="https://www.instagram.com/blakasutha.unsoed/" class="text-decoration-none text-warning">
                         <i class="fab fa-instagram"></i> Instagram
                     </a> |
                     <a href="#" class="text-decoration-none text-warning">
                         <i class="fab fa-youtube"></i> YouTube
                     </a> |
-                    <a href="#" class="text-decoration-none text-warning">
+                    <a href="https://github.com/blakasutha-soedirman/" class="text-decoration-none text-warning">
                         <i class="fab fa-github"></i> GitHub
                     </a></p>
                 </div>
             </div>
             <hr>
             <div class="text-center">
-                <p class="mb-0">&copy; 2026 Tim Robotika. All rights reserved.</p>
+                <p class="mb-0">&copy; 2026 Blakasutha Team. All rights reserved.</p>
             </div>
         </div>
     </footer>
