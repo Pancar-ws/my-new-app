@@ -1,0 +1,481 @@
+/* ==================== GENERAL STYLES ==================== */
+:root {
+    --primary: #6C63FF;
+    --secondary: #FFB84D;
+    --danger: #FF6B6B;
+    --success: #4ECDC4;
+    --light: #F7F8FC;
+    --dark: #2C2C2C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==================== NAVBAR ==================== */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #2C2C2C 0%, #1a1a1a 100%) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary) !important;
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2C2C2C 50%, #6C63FF 100%);
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+.hero-section h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .lead {
+    color: #39311D;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .hero-benefits p {
+    color: #39311D;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: rgba(107, 99, 255, 0.1);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.hero-section h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 0.8s ease;
+}
+
+.hero-section .lead {
+    color: #39311D;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.8s ease 0.2s both;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.hero-benefits {
+    animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.hero-benefits p {
+    color: #39311D;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hero-benefits i {
+    margin-right: 8px;
+    color: #39311D;
+}
+
+.hero-media {
+    animation: fadeInRight 0.8s ease 0.6s both;
+}
+
+.hero-media iframe {
+    min-height: 300px;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ==================== BUTTONS ==================== */
+.btn {
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-primary:hover {
+    background: darken(var(--primary), 10%);
+    border-color: darken(var(--primary), 10%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(108, 99, 255, 0.3);
+}
+
+.btn-warning {
+    background: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+    color: #000 !important;
+}
+
+.btn-warning:hover {
+    background: #FFA500 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(255, 184, 77, 0.3);
+}
+
+.btn-outline-light {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline-light:hover {
+    background: white;
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* ==================== TENTANG SECTION ==================== */
+.tentang-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.stat-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow: 0 12px 24px rgba(108, 99, 255, 0.2);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ==================== PROYEK SECTION ==================== */
+.proyek-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.hover-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(108, 99, 255, 0.2);
+}
+
+.hover-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.hover-card:hover img {
+    filter: brightness(0.8);
+}
+
+.card-title {
+    color: var(--primary);
+}
+
+.badge {
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+}
+
+/* ==================== RESOURCES SECTION ==================== */
+.resources-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.resource-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    box-shadow: 0 16px 32px rgba(108, 99, 255, 0.15);
+}
+
+.resource-icon {
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover .resource-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* ==================== TESTIMONIAL SECTION ==================== */
+.testimonial-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.testimonial-card {
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--primary) !important;
+}
+
+.testimonial-card:hover {
+    transform: translateX(8px);
+    box-shadow: 0 12px 24px rgba(108, 99, 255, 0.15);
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 2px solid var(--primary);
+}
+
+.award-item {
+    transition: all 0.3s ease;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.award-item:hover {
+    background: var(--light);
+    transform: scale(1.05);
+}
+
+/* ==================== REKRUT SECTION ==================== */
+.rekrut-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(135deg, #F7F8FC 0%, #e8e9f5 100%);
+}
+
+.form-control,
+.form-select {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.25);
+}
+
+.form-label {
+    color: #2C2C2C;
+    margin-bottom: 0.8rem;
+}
+
+.g-recaptcha {
+    transform: scale(0.9);
+    transform-origin: 0 0;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2C2C2C 100%);
+    color: #fff;
+    margin-top: 5rem;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--secondary) !important;
+}
+
+footer h5 {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+footer p {
+    line-height: 1.8;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .hero-media iframe {
+        min-height: 250px;
+    }
+
+    .btn {
+        font-size: 0.875rem;
+        padding: 0.6rem 1.2rem !important;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-benefits p {
+        font-size: 0.95rem;
+    }
+
+    .resources-section .col-lg-3 {
+        margin-bottom: 1.5rem;
+    }
+
+    .g-recaptcha {
+        transform: scale(0.75);
+        transform-origin: 0 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+
+    .stat-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .testimonial-card {
+        margin-bottom: 1.5rem;
+    }
+
+    footer h5 {
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+    }
+}
+
+/* ==================== UTILITIES ==================== */
+.text-warning {
+    color: var(--secondary) !important;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2C2C2C 50%, #6C63FF 100%);
+}
+
+.shadow-lg {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ==================== SCROLLBAR ==================== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darken(var(--primary), 10%);
+}
